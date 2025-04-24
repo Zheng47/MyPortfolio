@@ -1,0 +1,42 @@
+﻿
+.info-container {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+    .info-container > label {
+        font-size: 2rem;
+        font-weight: 500;
+        color: white;
+    }
+
+.text {
+    width: auto;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    color: white;
+    height: auto;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 5px solid;
+    animation: typing 3s steps(20), cursor .3s step-end infinite alternate;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    } to {
+          width: 100%;
+    }
+}
+
+@keyframes cursor {
+    50% {
+        border-color: transparent;
+    }
+}
