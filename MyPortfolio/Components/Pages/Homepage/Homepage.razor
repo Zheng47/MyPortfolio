@@ -1,8 +1,19 @@
 ﻿@layout Layout.HomepageLayout
 
+@page "/home"
 @page "/"
+@rendermode InteractiveServer
+
+@* @inject IJSRuntime JS *@
+
+@* <button @onclick="IncrementCount">Click Me to Show Alert</button> *@
+
+<div id="" class="info-container">
+    <label>@ownerName</label>
+    <p class="text" id="typewriter">@descriptions</p>
+</div>
 
 <div class="info-container">
-    <label>ALEXANDER JONARD SEN</label>
-    <p class="text">I AM PROGRAMMER!..</p>
+    <img src="Gallery/Homepage/Content/sen.jpg" />
 </div>
+
