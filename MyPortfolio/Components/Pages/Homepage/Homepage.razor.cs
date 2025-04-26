@@ -5,7 +5,7 @@ namespace MyPortfolio.Components.Pages.Homepage
 {
     public partial class Homepage
     {
-        private string ownerName = "Alexander Jonard Sen";
+        private string welcomeName = "Hi! My name is Alex!";
 
         private string descriptions = "FRONT END DEVELOPER!..";
         //private int currentCount = 0;
