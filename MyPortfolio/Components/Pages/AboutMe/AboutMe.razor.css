@@ -1,0 +1,60 @@
+﻿
+.about-container {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+    /*FOR ABOUT ME*/
+    #border {
+        height: 50%;
+        width: auto;
+        padding: 5rem;
+        margin: auto;
+        border-right: 0.5rem solid white;
+        border-bottom: 0.2rem solid white;
+        border-radius: 50%;
+    }
+    .about-container > label {
+        width: auto;
+        font-size: 4rem;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        color: white;
+        margin: auto;
+        border-right: 0.5rem solid white;
+    }
+
+.about-me-details {
+    width: 75%;
+    height: 70%;
+    margin: auto;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    word-spacing: 0.5rem;
+    font-weight: 200;
+    color: white;
+    text-shadow: 0rem 0rem 2rem white;
+    text-align: justify;
+    line-height: 2.5rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: relative;
+    scroll-behavior: smooth;
+}
+
+/* Hide default scrollbar (optional for beauty) */
+.about-me-details::-webkit-scrollbar {
+    width: 5px;
+}
+
+.about-me-details::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 10px;
+}
+
+.about-me-details::-webkit-scrollbar-track {
+    background-color: transparent;
+}

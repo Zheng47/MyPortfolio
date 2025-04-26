@@ -1,5 +1,43 @@
 ﻿@layout Layout.HomepageLayout
 
 @page "/about-me"
+@inject IJSRuntime JS
+@rendermode InteractiveServer
 
-<label>About Me</label>
+<script>
+    window.startAutoScroll = function () {
+        const scrollElement = document.querySelector('.about-me-details');
+        let scrollDown = true;
+
+        setInterval(() => {
+            if (scrollDown) {
+                scrollElement.scrollTop += 1; // scroll down slowly
+                if (scrollElement.scrollTop + scrollElement.clientHeight >= scrollElement.scrollHeight) {
+                    scrollDown = false;
+                }
+            } else {
+                scrollElement.scrollTop -= 1; // scroll up slowly
+                if (scrollElement.scrollTop <= 0) {
+                    scrollDown = true;
+                }
+            }
+        }, 30); // adjust speed here
+    }
+</script>
+
+<div class="about-container" id="border">
+    <label class="typing">ABOUT ME!..</label>
+</div>
+<div class="about-container">
+    <p class="about-me-details">
+        My name is Alexander Jonard D. Sen. I am a dedicated and passionate software and web developer with
+        nearly three years of experience gained during my time as an Information Technology student. I am currently taking Bachelor 
+        of Science in Information Technology at Quezon City University, under
+        the SBIT-3L section, as a proud scholar. I also have experience with
+        various programming languages, including Java, Python, C#, C++, and Visual Basic, which
+        provide me with a significant advantage in mastering the field of technology. These skills have
+        allowed me to undertake freelance commissions and projects, enabling me to apply my knowledge
+        to real-world scenarios while supporting others in achieving their goals. I successfully graduated
+        from San Francisco High School with honors
+    </p>
+</div>
