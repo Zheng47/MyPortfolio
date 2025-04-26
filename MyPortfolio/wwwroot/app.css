@@ -63,3 +63,23 @@ h1:focus {
 .form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
     text-align: start;
 }
+
+.typing {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 2s steps(22, end), cursor 0.7s steps(1) infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0ch;
+    } to {
+        width: 11ch;
+      }
+}
+
+@keyframes cursor  {
+    50% {
+        border-color: transparent;
+    }
+}

@@ -37,14 +37,25 @@
             color: skyblue;
             border-bottom: 1px solid rgb(128, 128, 128, 0.5);
         }
+        
+    /*FACEBOOK LINK*/
     ::deep #facebook-link {
-        margin-right: 2%;
         background: url('Gallery/Homepage/NavbarIcons/facebook.png') no-repeat center;
-        background-size:50% 50%;
+        background-size:50% auto;
     }
         ::deep #facebook-link:hover {
             background: rgb(128, 128, 128, 0.30) url('Gallery/Homepage/NavbarIcons/facebook.png') no-repeat center;
-            background-size: 50% 50%;
+            background-size: 50% auto;
+        }
+    /*GITHUB LINK*/
+    ::deep #github-link {
+        margin-right: 2%;
+        background: url('Gallery/Homepage/NavbarIcons/github.svg') no-repeat center;
+        background-size: 50% auto;
+    }
+        ::deep #github-link:hover {
+            background: rgb(128, 128, 128, 0.30) url('Gallery/Homepage/NavbarIcons/github.svg') no-repeat center;
+            background-size: 50% auto;
         }
 
 .homepage-container {
