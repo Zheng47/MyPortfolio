@@ -5,9 +5,9 @@ namespace MyPortfolio.Components.Pages.Homepage
 {
     public partial class Homepage
     {
-        private string welcomeName = "Hi! My name is Alex!";
+        private string welcomeName = "Hi! I'm Alexander!";
 
-        private string descriptions = "FRONT END DEVELOPER!..";
+        private string descriptions = "A FRONT END DEVELOPER!..";
         //private int currentCount = 0;
         //public async Task IncrementCount()
         //{
