@@ -24,7 +24,7 @@
         font-weight: 500;
         color: white;
         margin: auto;
-        border-right: 0.5rem solid white;
+        border-right: 0.1rem solid white;
     }
 
 .about-me-details {
@@ -45,16 +45,7 @@
     scroll-behavior: smooth;
 }
 
-/* Hide default scrollbar (optional for beauty) */
 .about-me-details::-webkit-scrollbar {
-    width: 5px;
+    width: 0px;
 }
 
-.about-me-details::-webkit-scrollbar-thumb {
-    background-color: white;
-    border-radius: 10px;
-}
-
-.about-me-details::-webkit-scrollbar-track {
-    background-color: transparent;
-}
