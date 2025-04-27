@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\Gallery\Homepage\" />
+    <Folder Include="wwwroot\Gallery\Achievements\" />
   </ItemGroup>
 
 </Project>

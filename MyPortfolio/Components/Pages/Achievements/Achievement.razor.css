@@ -1,0 +1,34 @@
+﻿
+.image-container {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.scroller {
+    display: flex;
+    flex-direction: row;
+    animation: scroll-x 20s linear infinite 1s;
+}
+
+.img {
+    height: 100%;
+    width: auto;
+    margin: auto 10rem auto 10rem;
+    object-fit: contain;
+}   
+
+@keyframes scroll-x {
+    0% {
+        transform: translateX(0%);
+    } 
+    50% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
