@@ -21,6 +21,7 @@
         box-shadow: 0px 0px 30px rgb(128, 128, 128, 0.50), 0px 0px 70px rgb(255, 216, 0, 0.30), 0px 0px 70px white;
         width: auto;
         height: 70%;
+        animation: ease-in 2s;
     }
 
 .text {
@@ -34,10 +35,7 @@
     white-space: nowrap;
     overflow: hidden;
     border-right: 5px solid white;
-    /*animation: typing 3s steps(22) forwards, cursor .3s steps(22) infinite alternate;*/
-    /*    animation: typing 3s steps(22, end) forwards, 
-               cursor 0.7s steps(1) 3s 5;*/
-    animation: typing 3s steps(22, end) 1s infinite alternate, cursor 0.7s steps(1) infinite;
+    animation: typing 2s steps(22, end) infinite alternate, cursor 0.7s steps(1) infinite;
 }
 
 @keyframes typing {
@@ -51,5 +49,17 @@
 @keyframes cursor {
     50% {
         border-color: transparent;
+    }
+}
+
+@keyframes ease-in {
+    0% {
+        transform: translateY(100%);
+    }
+    50% {
+        transform: translateY(-30%);
+    }
+    100% {
+        transform: translateY(0);
     }
 }
